@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is_diabetic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+        }
+
+        .left {
+            text-align: center;
+            padding-right: 20px;
+        }
+
+        .right img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.2em;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="left">
+            <h1>Not Diabetic</h1>
+            <p>You are Not diabetic! Wish you a good health.</p>
+            <button class="button"><a href="{{url_for('home')}}">Check Again</a></button>
+        </div>
+        <div class="right">
+            <img height="400px" width="400px" src="https://ordinaryandhappy.com/wp-content/uploads/2021/02/oah60_00fi.jpg" alt="Illustration of a diabetic person">
+        </div>
+    </div>
+</body>
+</html>

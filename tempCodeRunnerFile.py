@@ -1,0 +1,1 @@
+ickle.dump(classifier,open('model.pkl','wb'))
